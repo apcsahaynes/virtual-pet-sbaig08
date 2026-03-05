@@ -25,8 +25,8 @@ void drawStats(VirtualPet pet) {
   int row = 0;
   statRow("Energy",    pet.getEnergyLevel(),    row++);
   statRow("Happiness", pet.getHappinessLevel(), row++);
-  // statRow("Weight",    pet.getWeight(),         row++);  // uncomment when getter added
-  // statRow("Age",       pet.getAgeYears(),        row++);  // uncomment when getter added
+  statRow("Weight",    pet.getWeight(),         row++);  // uncomment when getter added
+  statRow("Age",       pet.getAgeYears(),        row++);  // uncomment when getter added
 }
 
 // Draws one label + value row inside the stats panel
@@ -72,4 +72,6 @@ void drawMessage() {
   textAlign(CENTER, CENTER);
   textSize(16);
   text(actionMessage, width / 2, 405);
+}
+
 }
