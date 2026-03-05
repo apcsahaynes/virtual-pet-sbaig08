@@ -17,7 +17,7 @@ void setup() {
   size(600, 500);
   textFont(createFont("Arial", 16, true));
 
-  myPet = new VirtualPet4("Coco");
+  myPet = new VirtualPet("Coco");
 
   // Buttons sit along the bottom of the screen
   // Button(label, x, y, width, height)
@@ -60,4 +60,7 @@ void mousePressed() {
 void showMessage(String msg) {
   actionMessage = msg;
   messageTime = millis();
+}
+
+
 }
