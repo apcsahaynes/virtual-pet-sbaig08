@@ -52,7 +52,10 @@ public class VirtualPet {
       weight--;
     }
   }
-
+  public void sleep(){
+    this.energy+=10; 
+    this.happiness+=5;
+  }
   public void updateStatus(){
     if (happiness > 0){
       happiness--;
@@ -75,8 +78,5 @@ public class VirtualPet {
     return name + "'s information: \nEnergy: " + energy 
     + "\nweight: " + weight + "\nHappiness: " + happiness
     + "\nAge: " + ageYears + " years and " + ageMonths + " months.";
-
-  }
-}
   }
 }
