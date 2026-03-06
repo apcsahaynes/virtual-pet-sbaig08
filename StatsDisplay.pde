@@ -1,4 +1,3 @@
-
 // ---- Layout constants ----
 final int STATS_X      = 420;   // left edge of stats panel
 final int STATS_Y      = 20;    // top edge of stats panel
@@ -72,6 +71,4 @@ void drawMessage() {
   textAlign(CENTER, CENTER);
   textSize(16);
   text(actionMessage, width / 2, 405);
-}
-
 }
